@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 31_10</title>
+    <style>
+        img{
+            width:300px;
+            height:400px;
+            padding-left:42% ;
+        }
+    </style>
+</head>
+
+<body id="fundo">
+    <h1>Praticando 1 - Javascript parte 3</h1>
+    <h2>Lâmpada</h2>
+    <img id="lamp" src="l.png">
+    <script>
+        document.getElementById("lamp").onmouseover = () => {
+            document.getElementById("fundo").style.backgroundColor = "white";
+            document.body.style.color = "black"
+            document.querySelector("img").src = "la.png"
+        }
+
+        document.getElementById("lamp").onmouseout = () => {
+            document.getElementById("fundo").style.backgroundColor = "black";
+            document.body.style.color = "white"
+            document.querySelector("img").src = "l.png"
+        }
+
+    </script>
+</body>
+
+</html>
